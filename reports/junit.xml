@@ -1,52 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="13" failures="9" errors="0" time="15.687">
-  <testsuite name="Reqres API" errors="0" failures="9" skipped="0" timestamp="2024-03-02T08:18:14" time="15.511" tests="13">
-    <testcase classname="Reqres API Create user As an admin, I can create new users with valid data" name="Reqres API Create user As an admin, I can create new users with valid data" time="0.886">
+<testsuites name="jest tests" tests="21" failures="9" errors="0" time="15.132">
+  <testsuite name="Reqres API" errors="0" failures="0" skipped="0" timestamp="2024-03-02T08:57:54" time="6.694" tests="8">
+    <testcase classname="Reqres API Get list users As an admin, I can get list data users" name="Reqres API Get list users As an admin, I can get list data users" time="0.767">
     </testcase>
-    <testcase classname="Reqres API Create user As an admin, I can create new users without name" name="Reqres API Create user As an admin, I can create new users without name" time="0.497">
+    <testcase classname="Reqres API Get list users As an admin, I can get list data users with undefined query param" name="Reqres API Get list users As an admin, I can get list data users with undefined query param" time="0.665">
     </testcase>
-    <testcase classname="Reqres API Create user As an admin, I can create new users without job" name="Reqres API Create user As an admin, I can create new users without job" time="0.462">
+    <testcase classname="Reqres API Get list users As an admin, I can get list data users with null query param" name="Reqres API Get list users As an admin, I can get list data users with null query param" time="0.471">
     </testcase>
-    <testcase classname="Reqres API Create user As an admin, I can create new users without id" name="Reqres API Create user As an admin, I can create new users without id" time="0.462">
+    <testcase classname="Reqres API Get list users As an admin, I can get list data users with specific page and per page" name="Reqres API Get list users As an admin, I can get list data users with specific page and per page" time="0.113">
     </testcase>
-    <testcase classname="Reqres API Create user As an admin, I cannot create a new user with zero name" name="Reqres API Create user As an admin, I cannot create a new user with zero name" time="0.592">
+    <testcase classname="Reqres API Get list users As an admin, I can get list data users with per page is more than total data" name="Reqres API Get list users As an admin, I can get list data users with per page is more than total data" time="0.116">
+    </testcase>
+    <testcase classname="Reqres API Get list users As an admin, I can get list data users with per page is equal to total data" name="Reqres API Get list users As an admin, I can get list data users with per page is equal to total data" time="0.443">
+    </testcase>
+    <testcase classname="Reqres API Get list users As an admin, I can get list data users with next page" name="Reqres API Get list users As an admin, I can get list data users with next page" time="0.101">
+    </testcase>
+    <testcase classname="Reqres API Get list users As an admin, I cannot get list data users with per page is more than total data and page is more than total pages" name="Reqres API Get list users As an admin, I cannot get list data users with per page is more than total data and page is more than total pages" time="0.484">
+    </testcase>
+  </testsuite>
+  <testsuite name="Reqres API" errors="0" failures="9" skipped="0" timestamp="2024-03-02T08:57:54" time="14.593" tests="13">
+    <testcase classname="Reqres API Create user As an admin, I can create new users with valid data" name="Reqres API Create user As an admin, I can create new users with valid data" time="0.577">
+    </testcase>
+    <testcase classname="Reqres API Create user As an admin, I can create new users without name" name="Reqres API Create user As an admin, I can create new users without name" time="0.548">
+    </testcase>
+    <testcase classname="Reqres API Create user As an admin, I can create new users without job" name="Reqres API Create user As an admin, I can create new users without job" time="0.611">
+    </testcase>
+    <testcase classname="Reqres API Create user As an admin, I can create new users without id" name="Reqres API Create user As an admin, I can create new users without id" time="0.515">
+    </testcase>
+    <testcase classname="Reqres API Create user As an admin, I cannot create a new user with zero name" name="Reqres API Create user As an admin, I cannot create a new user with zero name" time="0.51">
       <failure>Error: expect(received).toEqual(expected) // deep equality
 
 Expected: 400
 Received: 201
-    at /Users/mac/IdeaProjects/reqres_automation_api/src/test/create-user.test.ts:65:41
+    at /Users/mac/IdeaProjects/reqres_automation_api/src/test/create-user.test.ts:64:41
     at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
     </testcase>
-    <testcase classname="Reqres API Create user As an admin, I cannot create a new user with null name" name="Reqres API Create user As an admin, I cannot create a new user with null name" time="0.628">
+    <testcase classname="Reqres API Create user As an admin, I cannot create a new user with null name" name="Reqres API Create user As an admin, I cannot create a new user with null name" time="0.497">
       <failure>Error: expect(received).toEqual(expected) // deep equality
 
 Expected: 400
 Received: 201
-    at /Users/mac/IdeaProjects/reqres_automation_api/src/test/create-user.test.ts:65:41
+    at /Users/mac/IdeaProjects/reqres_automation_api/src/test/create-user.test.ts:64:41
     at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
     </testcase>
-    <testcase classname="Reqres API Create user As an admin, I cannot create a new user with undefined name" name="Reqres API Create user As an admin, I cannot create a new user with undefined name" time="0.613">
+    <testcase classname="Reqres API Create user As an admin, I cannot create a new user with undefined name" name="Reqres API Create user As an admin, I cannot create a new user with undefined name" time="0.511">
       <failure>Error: expect(received).toEqual(expected) // deep equality
 
 Expected: 400
 Received: 201
-    at /Users/mac/IdeaProjects/reqres_automation_api/src/test/create-user.test.ts:65:41
+    at /Users/mac/IdeaProjects/reqres_automation_api/src/test/create-user.test.ts:64:41
     at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
     </testcase>
-    <testcase classname="Reqres API Create user As an admin, I cannot create a new user with zero job" name="Reqres API Create user As an admin, I cannot create a new user with zero job" time="0.509">
+    <testcase classname="Reqres API Create user As an admin, I cannot create a new user with zero job" name="Reqres API Create user As an admin, I cannot create a new user with zero job" time="0.499">
       <failure>Error: expect(received).toEqual(expected) // deep equality
 
 Expected: 400
 Received: 201
-    at /Users/mac/IdeaProjects/reqres_automation_api/src/test/create-user.test.ts:76:41
+    at /Users/mac/IdeaProjects/reqres_automation_api/src/test/create-user.test.ts:75:41
     at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
     </testcase>
-    <testcase classname="Reqres API Create user As an admin, I cannot create a new user with null job" name="Reqres API Create user As an admin, I cannot create a new user with null job" time="0.515">
+    <testcase classname="Reqres API Create user As an admin, I cannot create a new user with null job" name="Reqres API Create user As an admin, I cannot create a new user with null job" time="0.526">
       <failure>Error: expect(received).toEqual(expected) // deep equality
 
 Expected: 400
 Received: 201
-    at /Users/mac/IdeaProjects/reqres_automation_api/src/test/create-user.test.ts:76:41
+    at /Users/mac/IdeaProjects/reqres_automation_api/src/test/create-user.test.ts:75:41
     at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
     </testcase>
     <testcase classname="Reqres API Create user As an admin, I cannot create a new user with undefined job" name="Reqres API Create user As an admin, I cannot create a new user with undefined job" time="0.508">
@@ -54,31 +72,31 @@ Received: 201
 
 Expected: 400
 Received: 201
-    at /Users/mac/IdeaProjects/reqres_automation_api/src/test/create-user.test.ts:76:41
+    at /Users/mac/IdeaProjects/reqres_automation_api/src/test/create-user.test.ts:75:41
     at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
     </testcase>
-    <testcase classname="Reqres API Create user As an admin, I cannot create a new user with zero job" name="Reqres API Create user As an admin, I cannot create a new user with zero job" time="1.137">
+    <testcase classname="Reqres API Create user As an admin, I cannot create a new user with zero job" name="Reqres API Create user As an admin, I cannot create a new user with zero job" time="0.511">
       <failure>Error: expect(received).toEqual(expected) // deep equality
 
 Expected: 400
 Received: 201
-    at /Users/mac/IdeaProjects/reqres_automation_api/src/test/create-user.test.ts:87:41
+    at /Users/mac/IdeaProjects/reqres_automation_api/src/test/create-user.test.ts:86:41
     at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
     </testcase>
-    <testcase classname="Reqres API Create user As an admin, I cannot create a new user with null job" name="Reqres API Create user As an admin, I cannot create a new user with null job" time="0.445">
+    <testcase classname="Reqres API Create user As an admin, I cannot create a new user with null job" name="Reqres API Create user As an admin, I cannot create a new user with null job" time="0.511">
       <failure>Error: expect(received).toEqual(expected) // deep equality
 
 Expected: 400
 Received: 201
-    at /Users/mac/IdeaProjects/reqres_automation_api/src/test/create-user.test.ts:87:41
+    at /Users/mac/IdeaProjects/reqres_automation_api/src/test/create-user.test.ts:86:41
     at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
     </testcase>
-    <testcase classname="Reqres API Create user As an admin, I cannot create a new user with undefined job" name="Reqres API Create user As an admin, I cannot create a new user with undefined job" time="0.52">
+    <testcase classname="Reqres API Create user As an admin, I cannot create a new user with undefined job" name="Reqres API Create user As an admin, I cannot create a new user with undefined job" time="0.512">
       <failure>Error: expect(received).toEqual(expected) // deep equality
 
 Expected: 400
 Received: 201
-    at /Users/mac/IdeaProjects/reqres_automation_api/src/test/create-user.test.ts:87:41
+    at /Users/mac/IdeaProjects/reqres_automation_api/src/test/create-user.test.ts:86:41
     at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
     </testcase>
   </testsuite>

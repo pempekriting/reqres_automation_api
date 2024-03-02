@@ -62,4 +62,4 @@ To running the test, please follow this steps:
 - [@pempekriting](https://github.com/pempekriting) - Idea & Initial work
 
 ## Evidence Test <a name = "evidence"></a>
-You can check the report [here](https://pempekriting.github.io/pempekriting/reqres_automation_api/reports/results_test.html)
+You can check the report [here](https://pempekriting.github.io/reqres_automation_api/reports/results_test.html)
