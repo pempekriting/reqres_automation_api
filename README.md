@@ -1,6 +1,6 @@
 <p align="center">
   <a href="" rel="noopener">
- <img width=300px height=169px src="/resources/reqres_logo.png" alt="Project logo"></a>
+ <img width=300px height=169px src="resources/reqres_logo.png" alt="Project logo"></a>
 </p>
 
 <h3 align="center">Automation API With Jest Framework</h3>
@@ -62,3 +62,4 @@ To running the test, please follow this steps:
 - [@pempekriting](https://github.com/pempekriting) - Idea & Initial work
 
 ## Evidence Test <a name = "evidence"></a>
+You can check the report [here](https://pempekriting.github.io/pempekriting/reqres_automation_api/reports/results_test.html)
