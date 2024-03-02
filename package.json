@@ -1,0 +1,37 @@
+{
+  "name": "reqres_automation_api",
+  "version": "1.0.0",
+  "description": "Automation for Reqres API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pempekriting/reqres_automation_api.git"
+  },
+  "keywords": [
+    "api",
+    "automation",
+    "reqres"
+  ],
+  "author": "Kgs. Azzam Nizar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pempekriting/reqres_automation_api/issues"
+  },
+  "homepage": "https://github.com/pempekriting/reqres_automation_api#readme",
+  "devDependencies": {
+    "@faker-js/faker": "^8.4.1",
+    "@types/jest": "^29.5.12",
+    "@types/jest-json-schema": "^6.1.4",
+    "@types/supertest": "^6.0.2",
+    "dotenv": "^16.4.5",
+    "jest": "^29.7.0",
+    "jest-html-reporters": "^3.1.7",
+    "jest-junit": "^16.0.0",
+    "jsonschema": "^1.4.1",
+    "supertest": "^6.3.4",
+    "ts-jest": "^29.1.2"
+  }
+}
