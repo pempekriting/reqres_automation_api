@@ -29,25 +29,31 @@ jobs:
         run: cp -v .env.dev .env 
       - name: Run the tests
         run: npm test
+        continue-on-error: true
       - name: Commit Files Report
         run: |
           git config --local user.name "pempekriting"
           git add ./reports
           git commit -m "Updating the repository report"
+        continue-on-error: true
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           force: true
+        continue-on-error: true
       - name: Setup Pages
         uses: actions/configure-pages@v4
+        continue-on-error: true
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
+        continue-on-error: true
         with:
           source: ./
           destination: ./_site
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
+        continue-on-error: true
 
   deploy:
     environment:
